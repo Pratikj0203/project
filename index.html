@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body onload="myFunction()">
+  <div id="loading"></div>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href=""> <b> STUDENT PERFORMANCE PREDICTION </b> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- title -->
+  <div class="welcome"> <b>  WELCOME TO STUDENT PERFORMANCE PREDICTION SYSTEM </b> </div>
+<!-- /title
+ -->
+  <!-- 3-Images -->
+  <div class="picture ">
+    <img src="glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg" alt="" id="first">
+    <img src="aryan-dhiman-iGLLtLINSkw-unsplash.jpg" alt="" id="second">
+    <img src="luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="" id="third">
+  </div>
+<!-- /3-Images -->
+
+  <div class="word"> <b>  PREDICTION  </b> </div>
+
+  <!-- form -->
+  <form class="charachteristics">
+    <div class="row-1">
+      <!-- <label for="Gender">Gender : </label> -->
+      <!-- <input type="Gender" name="Gender" id="Gender" placeholder="Gender"> -->
+      <input list="browsers" name="myBrowser" placeholder="Gender" id="Gender">
+      <datalist id="browsers">
+        <option value="Male">
+        <option value="Female">
+      </datalist>
+
+      <!-- <label for="Guardian" id="Guardian">Guardian : </label> -->
+      <input type="Guardian" name="Guardian" id="guardian" placeholder="Guardian">
+
+      <!-- <label for="Famsup" id="Famsup">Famsup : </label> -->
+      <input type="Famsup" name="Famsup" id="famsup" placeholder="Family Support">
+    </div>
+
+    <div class="row-2">
+      <!-- <label for="Paid" id="Paid">Paid : </label> -->
+      <input type="Paid" name="Paid" id="paid" placeholder="Paid">
+
+      <!-- <label for="Activity" id="Activity">Activity:</label> -->
+      <input type="Activity" name="Activity" id="activity" placeholder="Activities">
+
+      <!-- <label for="Internet" id="Internet">Internet : </label> -->
+      <input type="Internet" name="Internet" id="internet" placeholder="Usage of internet">
+    </div>
+
+    <div class="row-3">
+      <!-- <label for="Medu" id="Medu">Medu : </label> -->
+      <input type="Medu" name="Medu" id="medu" placeholder="Medu">
+
+      <!-- <label for="Study-time" id="Study-time">Study-time : </label> -->
+      <input type="number" name="Study-time" id="study-time" placeholder="Study-time">
+
+      <!-- <label for="Failure" id="Failure">Failure : </label> -->
+      <input type="Failure" name="Failure" id="failure" placeholder="Failure">
+    </div>
+
+    <div class="row-4">
+      <!-- <label for="Go-out">Go-out : </label> -->
+      <input type="number" name="Go-out" id="Go-out" placeholder="Going Out">
+
+      <!-- <label for="Absences">Absences : </label> -->
+      <input type="number" name="Absences" id="Absences" placeholder="Absences">
+
+      <!-- <label for="Health">Health : </label> -->
+      <input type="Health" name="Health" id="Health" placeholder="Health">
+    </div>
+
+    <div class="row-5">
+      <!-- <label for="G1">G1 : </label> -->
+      <input type="number" id="G1" placeholder="Sem-II Marks" >
+
+      <!-- <label for="G2">G2 : </label> -->
+      <input type="number" id="G2" placeholder="Sem-II Marks" >
+    </div>
+
+    <div class="button">
+      <a href="result.html"><input type="button" value="Submit" id="submit-btn"></a>
+      <input type="reset" value="Reset" id="reset-btn">
+    </div>
+  </form>
+  <!-- /form -->
+
+  <!-- About-section -->
+  <div class="about-section" id="About">
+    <h1>About Us Page</h1>
+    <p>Predicting student's academic performance is critical for educational institution becausee strategic
+      programs can be planned in improving or
+      maintaining student's performance during their period of studies in the instructions.The performance of the
+      academic performance in this study
+      is measured by their cumulative grade point average (CGPA) upon graduating.
+    </p>
+  </div>
+  <!-- /About-section -->
+
+  <!-- Contact -->
+  <h2 class="contact-us" id="Contact" style="text-align:center">CONTACT US</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="profile.jpg" alt="Jane" style="width:100%" height="150px">
+        <div class="container">
+          <h2 class="name-title">SHUBHAM PAWAR</h2>
+          <p class="title">Project Head</p>
+          <p>Mobile: 8830209883</p>
+          <p>Email: shubhampawar5351@gmai.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="sk.jpeg" alt="Mike" style="width:100%" height="150px">
+        <div class="container">
+          <h2 class="name-title">SHUBHAM KADAM</h2>
+          <p class="title">Project Maintainance</p>
+          <p>Mobile: 9823394541</p>
+          <p>Email: shubham22kadam@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="WhatsApp Image 2021-06-12 at 8.26.02 PM (1).jpeg" alt="John" style="width:100%" height="150px">
+        <div class="container">
+          <h2 class="name-title">OMKAR JADHAV</h2>
+          <p class="title">Project Designer</p>
+          <p>Mobile: 9561743832</p>
+          <p>Email: jadhavomkar1299@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="pj.jpeg" alt="John" style="width:100%" height="150px">
+        <div class="container">
+          <h2 class="name-title">PRATIK JADHAV</h2>
+          <p class="title">Frontend Designer</p>
+          <p>Mobile: 7020671372</p>
+          <p>Email: pratikj0203@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Contact -->
+  
+
+  <!-- Copyright -->
+  <footer class="bg-dark text-center text-white">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright: All Rights Reserved
+      <!-- <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a> -->
+    </div>
+  </footer>
+ <!-- /Copyright -->
+
+ <!-- preloader -->
+  <script>
+    var preloader = document.getElementById("loading");
+
+    function myFunction(){
+      preloader.style.display = 'none';
+    }
+
+  </script>
+  <!-- /preloader -->
+</body>
+
+</html>
